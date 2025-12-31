@@ -21,7 +21,7 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1928;
+Q.year = 2000;
 Q.month = 1;
 // how many actions have been taken this month?
 Q.month_actions = 0;
@@ -46,27 +46,27 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['left', 'center', 'labor', 'reformist', 'neorevisionist'];
+Q.factions = ['zemanovci', 'spidlovci', 'grossovci', 'sobotkovci', 'paroubkovci'];
 // should this be normalized to 100%?
-Q.left_strength = 15;
-Q.left_dissent = 20;
-Q.center_strength = 30;
-Q.center_dissent = 0;
-Q.labor_strength = 25;
-Q.labor_dissent = 5;
-Q.reformist_strength = 25;
-Q.reformist_dissent = 5;
-Q.neorevisionist_strength = 5;
-Q.neorevisionist_dissent = 10;
+Q.zemanovci_strength = 100;
+Q.zemanovci_dissent = 0;
+Q.spidlovci_strength = 0;
+Q.spidlovci_dissent = 0;
+Q.grossovci_strength = 0;
+Q.grossovci_dissent = 0;
+Q.sobotkovci_strength = 0;
+Q.sobotkovci_dissent = 0;
+Q.paroubkovci_strength = 0;
+Q.paroubkovci_dissent = 0;
 
 // secret events...
-Q.unions_independent = 0;
-Q.centrists_resign = 0;
-Q.left_split = 0;
-Q.reformists_resigned = 0;
+Q.spoz = 0
 
-// have we discovered neorevisionism?
-Q.neorevisionism = 0;
+// Future factions
+Q.paroubek = 0;
+Q.sobotka = 0
+Q.gross = 0
+
 
 // crisis_urgency indicates how seriously the SPD is taking the economic crisis - scale from 0 to 10.
 Q.crisis_urgency = 0;
@@ -109,13 +109,13 @@ Q.dvp_relation = 35;
 Q.DNVP_relation = 10;
 Q.NSDAP_relation = 0;
 
-Q.kpd_leader = "Thälmann";
-// alternative is the Conciliators as party leader
-Q.kpd_party_leader = "Thälmann";
+Q.kpd_leader = "Grebeníček";
+// Can be either Grebeníček, Filip, or Dolejš
+Q.kpd_party_leader = "Grebeníček";
 Q.z_leader = "Brüning";
-// party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
-Q.z_party_leader = "Marx";
-Q.nsdap_leader = "Hitler";
+// Can be either Čunek, Kalousek, or Svoboda, Svoboda will be the most friendly.
+Q.z_party_leader = "Kasal";
+Q.nsdap_leader = "";
 
 // hmm... maybe we can play nice with Hindenburg???
 Q.hindenburg_relation = 25;
@@ -196,15 +196,7 @@ Q.budget = 4;
 
 // Proportion of different social groups
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 45, table 3.4 - using 1925 figures
-Q.workers = 48; // industry and trade
-Q.old_middle = 13; // "old mittelstand"
-// 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
-Q.new_middle = 14; // "new mittelstand"
-Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
-// source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 8.6;
-Q.catholics = 30;
-
+Q.workers = 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
 
 // income for industrial workers in reichsmarks/year - 1928 = 1600 Reichsmarks/year; 1931 = 1440 Reichsmarks/year; 1933 = 1138 Reichsmarks/year - source: https://babel.hathitrust.org/cgi/pt?id=uiug.30112104147985&seq=50
