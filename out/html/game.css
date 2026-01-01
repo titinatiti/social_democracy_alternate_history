@@ -538,36 +538,34 @@ table {
 
 /* Styles for parties */
 .seat.kpd {
-    fill: #8B0000;
+    fill: rgb(255, 0, 0);
 }
 .seat.spd {
-    fill: #E3000F;
-    stroke: var(--border-color);
-    stroke-width: 1.5px;
+    fill: rgb(255, 154, 0);
 }
 .seat.ddp {
-    fill: #DCCA4A;
+    fill: rgb(0, 255, 0);
 }
 .seat.z {
-    fill: #000;
+    fill: rgb(255, 0, 255);
 }
 .seat.bvp {
-    fill: #69A2BE;
+    fill: #000;
 }
 .seat.dvp {
-    fill: #D5AC27;
+    fill: rgb(51, 51, 154);
 }
 .seat.other {
     fill: #909090;
 }
 .seat.dnvp {
-    fill: #3F7BC1;
+    fill: rgb(0, 0, 255);
 }
 .seat.nsdap {
-    fill: #954B00;
+    fill: rgb(128, 0, 0);
 }
 .seat.sapd {
-    fill: #C40000;
+    fill: rgb(196, 0, 0);
 }
 
 .tooltip-text {
